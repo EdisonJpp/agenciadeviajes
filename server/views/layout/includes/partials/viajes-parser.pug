@@ -1,0 +1,17 @@
+main.container.mt-5
+    h1.text-center.my-4 #{pagina}
+        .row.proximos-viajes
+            each viajes in Viajes
+                .col-md-6.col-lg-4
+                    .card
+                        img.img-fluid(src=`img/destinos_${viajes.imagen}.jpg`,  alt="viajes")
+                    .card-body
+                        h2= viajes.titulo 
+                        p
+                            i.fas.fa-calendar-alt 
+                            |  #{viajes.fecha_ida} - #{viajes.fecha_vuelta}
+                        p
+                            i.fas.fa-dollar-sign 
+                            |  #{viajes.precio}
+                        p.text-dark= viajes.descripcion.substr(0,100)
+                        a(href=`viajes/${viajes.id}` class="btn btn-success") Mas informacion

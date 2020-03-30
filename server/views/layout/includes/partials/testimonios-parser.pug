@@ -1,0 +1,15 @@
+
+.row
+    .col-md-12
+
+        blockquote.text-center Lee sobre nuestros clientes y sus experiencias
+        .row.testimoniales
+            each t in testimonial
+                .col-md-6.col-lg-4.mb-4
+                    .card
+                        .card-body
+                            blockquote.blockqoute
+                                p.mb-0 
+                                | #{t.mensaje}
+                        footer.blockquote-footer
+                                | #{t.nombre}       
