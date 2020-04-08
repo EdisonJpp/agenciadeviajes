@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 // require('dotenv').config({ path :'variable.env'});
 
-module.exports = new Sequelize('agenciadeviajes', 'root', 'pass', {
+module.exports = new Sequelize('agenciadeviajes', 'root', '', {
     host: "127.0.0.1",
     port: "3306",
     dialect: "mysql",
