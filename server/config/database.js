@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
-require('dotenv').config({ path :'variable.env'});
+// require('dotenv').config({ path :'variable.env'});
 
 module.exports = new Sequelize('agenciadeviajes', 'root', 'pass', {
     host: "127.0.0.1",
